@@ -1,0 +1,1 @@
+ls -put | tr '\n' ',' | sed 's/,$/\n/' | sort
