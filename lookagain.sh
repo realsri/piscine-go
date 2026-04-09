@@ -1,1 +1,1 @@
-find . -type f -name '*.sh' | cut -d '.' -f 2 | tr -d '/' | cat -e
+find . -type f -name '*.sh' | cut -d '.' -f 2 | tr -d '/'
