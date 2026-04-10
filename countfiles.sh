@@ -1,1 +1,1 @@
-echo "$(pwd): $(find . | wc -l | xargs)"
+find . | wc -l | tr -d ' '
