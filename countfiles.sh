@@ -1,1 +1,1 @@
-find . -type f -name '*' | wc -l | tr -d ' '
+echo "$(pwd): $(find . | wc -l | xargs)"
