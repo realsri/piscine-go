@@ -1,1 +1,1 @@
-find . -type f -name '*.sh' | sed 's|^\./||; s|\.sh$||' | sort -r | cat -e
+find . -type f -name '*.sh' | sed 's|^\./||; s|\.sh$||' | sort -r
