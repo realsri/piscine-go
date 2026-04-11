@@ -9,6 +9,7 @@ func PrintComb2() {
 		for b := a; b <= '9'; b++ {
 			z01.PrintRune(a)
 			z01.PrintRune(b)
+			z01.PrintRune(' ')
 			for i := '0'; i <= '8'; i++ {
 				for j := i + 1; j <= '9'; j++ {
 					if i != j {
@@ -17,12 +18,10 @@ func PrintComb2() {
 						if i != '8' { // comma space not needed at the last
 							z01.PrintRune(',')
 							z01.PrintRune(' ')
-						} else {
-							z01.PrintRune('\n')
-						}
 					}
 				}
 			}
 		}
 	}
+	z01.PrintRune('\n')
 }
