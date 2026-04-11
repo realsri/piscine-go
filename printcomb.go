@@ -12,7 +12,7 @@ func PrintComb() {
 				z01.PrintRune(j)
 				z01.PrintRune(k)
 
-				if i != 7 { // comma space not needed at the last
+				if i != '7' { // comma space not needed at the last
 					z01.PrintRune(',')
 					z01.PrintRune(' ')
 				} else {
