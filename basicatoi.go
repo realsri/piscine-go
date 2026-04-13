@@ -9,6 +9,7 @@ func BasicAtoi(s string) int {
 		digit := int(char - '0')
 		result = result*10 + digit
 	}
+
 	return result
 }
 
