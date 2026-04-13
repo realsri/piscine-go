@@ -1,7 +1,6 @@
-//package main
+// package main
 
-//import "fmt"
-
+// import "fmt"
 package piscine
 
 func BasicAtoi2(s string) int {
