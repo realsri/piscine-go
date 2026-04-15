@@ -2,7 +2,7 @@
 package piscine
 
 /*
-func IterativeFactorial(nb int) int { //oops! it is recursive factorial. not so memory efficient but clean //human comment not ai
+func IterativeFactorial(nb int) int { //oops! it is recursive factorial
 	if nb == 0 {
 		return 1
 	} else if nb < 0 {
@@ -18,6 +18,9 @@ func IterativeFactorial(nb int) int {
 	}
 	result := 1
 	for i := 1; i <= nb; i++ {
+		if result > 0 && result*i < result {
+			return 0
+		}
 		result = result * i
 	}
 	return result
