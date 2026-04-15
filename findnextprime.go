@@ -1,10 +1,8 @@
-package main
+// package main
+package piscine
 
-// package piscine
-
-import "fmt"
-
-func IsPrime(nb int) bool {
+// import "fmt"
+func IsPrime1(nb int) bool {
 	if nb <= 1 {
 		return false
 	}
@@ -27,14 +25,15 @@ func FindNextPrime(nb int) int {
 		return 2
 	}
 	for i := nb; true; i++ {
-		if IsPrime(i) {
+		if IsPrime1(i) {
 			return i
 		}
 	}
 	return 0
 }
 
+/*
 func main() {
 	fmt.Println(FindNextPrime(-1))
 	fmt.Println(FindNextPrime(2))
-}
+}*/
