@@ -6,17 +6,17 @@ import (
 	"fmt"
 )*/
 
-func IterativePower(nb int, power int) int {
+func RecursivePower(nb int, power int) int {
 	if power < 0 {
 		return 0
 	}
 	if power == 0 {
 		return 1
 	}
-	return IterativePower(nb, power-1) * nb
+	return RecursivePower(nb, power-1) * nb
 }
 
 /*
 func main() {
-	fmt.Println(IterativePower(4, 3))
+	fmt.Println(RecursivePower(4, 3))
 }*/
