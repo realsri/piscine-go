@@ -1,11 +1,26 @@
 // package main
+
+// import "fmt"
 package piscine
 
+/*
+	func Sqrt(nb int) int {
+		if nb == 0 {
+			return 0
+		}
+		for i := 0; i <= nb; i++ {
+			if nb == i*i {
+				return i
+			}
+		}
+		return 0
+	}
+*/
 func IsPrime(nb int) bool {
 	if nb <= 1 {
 		return false
 	}
-	for i := 2; i < nb; i++ {
+	for i := 2; i < Sqrt(nb); i++ {
 		if nb%i == 0 {
 			return false
 		}
@@ -17,5 +32,4 @@ func IsPrime(nb int) bool {
 func main() {
 	fmt.Println(IsPrime(5))
 	fmt.Println(IsPrime(4))
-}
-*/
+}*/
