@@ -1,5 +1,4 @@
-//package main
-
+// package main
 package piscine
 
 func Fibonacci(index int) int {
