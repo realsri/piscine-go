@@ -1,13 +1,11 @@
 // package main
 package piscine
 
-/*
-import (
-	"fmt"
-)*/
-
 func IsPrime(nb int) bool {
 	if nb < 2 {
+		return false
+	}
+	if nb > 127 {
 		return false
 	}
 	for i := 2; i < nb; i++ {
