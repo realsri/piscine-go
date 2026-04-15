@@ -5,7 +5,7 @@ func IsPrime(nb int) bool {
 	if nb < 2 {
 		return false
 	}
-	if nb > 127 {
+	if nb > 1100000087 {
 		return false
 	}
 	for i := 2; i < nb; i++ {
