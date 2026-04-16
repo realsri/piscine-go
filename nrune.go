@@ -6,6 +6,7 @@ import (
 	"github.com/01-edu/z01"
 )*/
 
+/*
 func NRune(s string, n int) rune {
 	srune := []rune(s)
 	if n <= len(srune) && n > 0 {
@@ -13,6 +14,20 @@ func NRune(s string, n int) rune {
 	} else {
 		return 0
 	}
+}*/
+
+func NRune(s string, n int) rune {
+	if n < 1 {
+		return 0
+	}
+	count := 0
+	for _, i := range s {
+		count++
+		if count == n {
+			return i
+		}
+	}
+	return 0
 }
 
 /*
