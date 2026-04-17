@@ -8,7 +8,7 @@ import (
 )
 */
 
-func IsUpper(s string) bool {
+func IsLower(s string) bool {
 	if len(s) < 1 {
 		return false
 	}
@@ -22,6 +22,6 @@ func IsUpper(s string) bool {
 
 /*
 func main() {
-	fmt.Println(IsUpper("HELLO"))
-	fmt.Println(IsUpper("HELLO!"))
+	fmt.Println(IsLower("HELLO"))
+	fmt.Println(IsLower("HELLO!"))
 }*/
