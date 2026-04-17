@@ -1,6 +1,7 @@
-package main
+//package main
 
-//package piscine
+package piscine
+
 /*
 import (
 	"fmt"
