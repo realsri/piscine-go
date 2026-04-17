@@ -9,6 +9,9 @@ import (
 */
 
 func IsUpper(s string) bool {
+	if len(s) < 1 {
+		return false
+	}
 	for _, c := range s {
 		if !(c >= 'A' && c <= 'Z') {
 			return false
