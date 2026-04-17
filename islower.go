@@ -22,6 +22,6 @@ func IsLower(s string) bool {
 
 /*
 func main() {
-	fmt.Println(IsLower("HELLO"))
-	fmt.Println(IsLower("HELLO!"))
+	fmt.Println(IsLower("hello"))
+	fmt.Println(IsLower("hello!"))
 }*/
