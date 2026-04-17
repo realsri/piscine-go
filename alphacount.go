@@ -12,7 +12,7 @@ import (
 func AlphaCount(s string) int {
 	count := 0
 	for _, char := range s {
-		if char >= 'A' && char <= 'z' {
+		if (char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z') {
 			count++
 		}
 	}
