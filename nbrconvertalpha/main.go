@@ -9,6 +9,12 @@ import (
 func main() {
 	arg := os.Args[1:]
 
+	isUpper := false
+	if arg[0] == "--upper" {
+		isUpper = true
+		arg = arg[1:]
+	}
+
 	lena := len(arg)
 
 	for i := 0; i < lena; i++ {
@@ -17,6 +23,7 @@ func main() {
 		/*for j := 0; j < len(argrune); j++ {
 			z01.PrintRune(argrune[j])
 		}*/
+
 		if len(str) == 1 && str[0] >= '0' && str[0] <= '9' {
 			n = int(str[0] - '0')
 		} else if len(str) == 2 && str[0] >= '0' && str[0] <= '9' && str[1] >= '0' && str[1] <= '9' {
@@ -30,8 +37,13 @@ func main() {
 		if len(str) > 2 {
 			z01.PrintRune(' ')
 		} else if n >= 1 || n <= 26 {
-			toprint := n + 96
-			z01.PrintRune(rune(toprint))
+			if isUpper {
+				toprint := n + 64
+				z01.PrintRune(rune(toprint))
+			} else {
+				toprint := n + 96
+				z01.PrintRune(rune(toprint))
+			}
 		} else {
 			z01.PrintRune(' ')
 		}
