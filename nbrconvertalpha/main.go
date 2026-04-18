@@ -9,6 +9,10 @@ import (
 func main() {
 	arg := os.Args[1:]
 
+	if len(arg) == 0 {
+		return
+	}
+
 	isUpper := false
 	if arg[0] == "--upper" {
 		isUpper = true
