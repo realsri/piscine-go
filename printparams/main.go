@@ -11,7 +11,7 @@ func main() {
 
 	lena := len(arg)
 
-	for i := 0; i < lena; i++ {
+	for i := 1; i < lena; i++ {
 		argrune := []rune(arg[i])
 		for j := 0; j < len(argrune); j++ {
 			z01.PrintRune(argrune[j])
