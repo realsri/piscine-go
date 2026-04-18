@@ -36,7 +36,7 @@ func main() {
 
 		if len(str) > 2 {
 			z01.PrintRune(' ')
-		} else if n >= 1 || n <= 26 {
+		} else if n >= 1 && n <= 26 {
 			if isUpper {
 				toprint := n + 64
 				z01.PrintRune(rune(toprint))
