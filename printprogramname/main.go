@@ -11,7 +11,9 @@ func main() {
 
 	arg0 := args[0]
 
-	len := len(arg0)
+	arg0rune := []rune(arg0)
+
+	len := len(arg0rune)
 
 	for i := 2; i < len; i++ {
 		z01.PrintRune(rune(arg0[i]))
