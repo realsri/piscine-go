@@ -1,10 +1,14 @@
-package main
+package piscine
 
-import (
-	//"piscine"
+import "github.com/01-edu/z01"
 
-	"github.com/01-edu/z01"
-)
+// package main
+
+// import (
+// 	//"piscine"
+
+// 	"github.com/01-edu/z01"
+// )
 
 func PrintWordsTables(a []string) {
 	for _, w := range a {
@@ -15,28 +19,28 @@ func PrintWordsTables(a []string) {
 	}
 }
 
-func SplitWhiteSpaces1(s string) []string {
-	var res []string
-	var w string
+// func SplitWhiteSpaces1(s string) []string {
+// 	var res []string
+// 	var w string
 
-	for _, c := range s {
-		if c == ' ' || c == '\t' || c == '\n' {
-			if w != "" {
-				res = append(res, w)
-				w = ""
-			}
-		} else {
-			w += string(c)
-		}
-	}
+// 	for _, c := range s {
+// 		if c == ' ' || c == '\t' || c == '\n' {
+// 			if w != "" {
+// 				res = append(res, w)
+// 				w = ""
+// 			}
+// 		} else {
+// 			w += string(c)
+// 		}
+// 	}
 
-	if w != "" {
-		res = append(res, w)
-	}
-	return res
-}
+// 	if w != "" {
+// 		res = append(res, w)
+// 	}
+// 	return res
+// }
 
-func main() {
-	a := SplitWhiteSpaces1("Hello how are you?")
-	PrintWordsTables(a)
-}
+// func main() {
+// 	a := SplitWhiteSpaces1("Hello how are you?")
+// 	PrintWordsTables(a)
+// }
