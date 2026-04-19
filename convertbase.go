@@ -1,6 +1,6 @@
 package main
 
-//package piscine
+// package piscine
 
 import (
 	"fmt"
@@ -30,7 +30,6 @@ func ConvertBase(nbr, baseFrom, baseTo string) string {
 		n /= len(baseTo)
 	}
 	return res
-
 }
 
 func main() {
