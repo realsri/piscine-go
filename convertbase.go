@@ -1,11 +1,11 @@
-package main
+//package main
 
-// package piscine
+package piscine
 
-import (
-	"fmt"
-	//"piscine"
-)
+// import (
+// 	"fmt"
+// 	//"piscine"
+// )
 
 func ConvertBase(nbr, baseFrom, baseTo string) string {
 	n := 0
@@ -32,7 +32,7 @@ func ConvertBase(nbr, baseFrom, baseTo string) string {
 	return res
 }
 
-func main() {
-	result := ConvertBase("101011", "01", "0123456789")
-	fmt.Println(result)
-}
+// func main() {
+// 	result := ConvertBase("101011", "01", "0123456789")
+// 	fmt.Println(result)
+// }
