@@ -10,11 +10,11 @@ func main() {
 	arg := os.Args
 	if len(arg) < 2 {
 		fmt.Println("File name missing")
-		os.Exit(0)
+		return
 	}
 	if len(arg) > 2 {
 		fmt.Println("Too many arguments")
-		os.Exit(0)
+		return
 	}
 
 	content, _ := os.ReadFile(arg[1])
