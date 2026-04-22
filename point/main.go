@@ -18,7 +18,7 @@ func printNumber(n int) {
 	if n >= 10 {
 		printNumber(n / 10)
 	}
-	z01.PrintRune(rune(n%10 + '0'))
+	z01.PrintRune(rune(n%10) + '0')
 }
 
 func printStr(s string) {
