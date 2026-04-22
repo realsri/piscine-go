@@ -31,7 +31,7 @@ func main() {
 			// fmt.Printf("ERROR: open %v: No such file or directory", arg[i])
 			Print("ERROR: open ")
 			Print(arg[i])
-			Print(": No such file or directory\n")
+			Print(": no such file or directory\n")
 			os.Exit(1)
 		}
 		// fmt.Println(string(content))
