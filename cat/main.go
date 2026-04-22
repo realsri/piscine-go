@@ -1,11 +1,18 @@
 package main
 
 import (
-	//"github.com/01-edu/z01"
 	"bufio"
-	"fmt"
+	//"fmt"
 	"os"
+
+	"github.com/01-edu/z01"
 )
+
+func Print(s string) {
+	for _, c := range s {
+		z01.PrintRune(c)
+	}
+}
 
 func main() {
 	arg := os.Args
@@ -13,15 +20,20 @@ func main() {
 		scanner := bufio.NewScanner(os.Stdin)
 		for scanner.Scan() {
 			input := scanner.Text()
-			fmt.Print(input)
+			// fmt.Print(input)
+			Print(input)
 		}
 		return
 	}
 	for i := 1; i < len(arg); i++ {
 		content, err := os.ReadFile(arg[i])
 		if err != nil {
-			fmt.Printf("ERROR: open %v: No such file or directory", arg[i])
+			// fmt.Printf("ERROR: open %v: No such file or directory", arg[i])
+			Print("ERROR: open ")
+			Print(arg[i])
+			Print(": No such file or directory\n")
 		}
-		fmt.Println(string(content))
+		// fmt.Println(string(content))
+		Print(string(content))
 	}
 }
