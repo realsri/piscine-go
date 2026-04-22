@@ -14,11 +14,12 @@ func setPoint(x *int, y *int) {
 	*y = '*' / 2
 }
 
-// func printNumber(n int) {
+// func printNum(n int) {
 // 	if n >= 10 {
-// 		printNumber(n / 10)
+// 		printNum(n / 10)
 // 	}
 // 	z01.PrintRune(rune(n%10) + '0')
+
 // }
 
 func printStr(s string) {
@@ -32,24 +33,45 @@ func main() {
 
 	setPoint(&points.x, &points.y)
 
-	var sx [2]byte
-	sx[0] = byte(rune(points.x)/10 + '0')
-	sx[1] = byte(rune(points.x)%10 + '0')
+	// var sx [2]byte
+	// sx[0] = byte(rune(points.x)/10 + '0')
+	// sx[1] = byte(rune(points.x)%10 + '0')
 
-	var sy [2]byte
-	sy[0] = byte(rune(points.y)/10 + '0')
-	sy[1] = byte(rune(points.y)%10 + '0')
+	// var sy [2]byte
+	// sy[0] = byte(rune(points.y)/10 + '0')
+	// sy[1] = byte(rune(points.y)%10 + '0')
+
+	a := '0'
+	a++ //'1'
+
+	b := a
+	b++ //'2'
+
+	d := b
+	d++
+	d++ //'4'
+
+	numx := [2]rune{d, b}
+	numy := [2]rune{b, a}
 
 	printStr("x = ")
 	// printNumber(points.x)
 	// z01.PrintRune(rune(points.x)/10 + '0')
 	// z01.PrintRune(rune(points.x)%10 + '0')
-	printStr(string(sx[:]))
+	// printNum(points.x)
+	// printStr(string(sx[:]))
+	for _, c := range numx {
+		z01.PrintRune(c)
+	}
 	printStr(", y = ")
 	// printNumber(points.y)
 	// z01.PrintRune(rune(points.y)/10 + '0')
 	// z01.PrintRune(rune(points.y)%10 + '0')
-	printStr(string(sy[:]))
+	// printNum(points.y)
+	// printStr(string(sy[:]))
+	for _, c := range numy {
+		z01.PrintRune(c)
+	}
 	z01.PrintRune('\n')
 
 	// fmt.Printf("x = %d, y = %d\n", points.x, points.y)
