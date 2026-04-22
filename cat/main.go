@@ -22,6 +22,7 @@ func main() {
 			input := scanner.Text()
 			// fmt.Print(input)
 			Print(input)
+			Print("\n")
 		}
 		return
 	}
