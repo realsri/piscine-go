@@ -32,14 +32,24 @@ func main() {
 
 	setPoint(&points.x, &points.y)
 
+	var sx [2]byte
+	sx[0] = byte(rune(points.x)/10 + '0')
+	sx[1] = byte(rune(points.x)%10 + '0')
+
+	var sy [2]byte
+	sy[0] = byte(rune(points.y)/10 + '0')
+	sy[1] = byte(rune(points.y)%10 + '0')
+
 	printStr("x = ")
 	// printNumber(points.x)
-	z01.PrintRune(rune(points.x)/10 + '0')
-	z01.PrintRune(rune(points.x)%10 + '0')
+	// z01.PrintRune(rune(points.x)/10 + '0')
+	// z01.PrintRune(rune(points.x)%10 + '0')
+	printStr(string(sx[:]))
 	printStr(", y = ")
 	// printNumber(points.y)
-	z01.PrintRune(rune(points.y)/10 + '0')
-	z01.PrintRune(rune(points.y)%10 + '0')
+	// z01.PrintRune(rune(points.y)/10 + '0')
+	// z01.PrintRune(rune(points.y)%10 + '0')
+	printStr(string(sy[:]))
 	z01.PrintRune('\n')
 
 	// fmt.Printf("x = %d, y = %d\n", points.x, points.y)
