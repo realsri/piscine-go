@@ -33,11 +33,11 @@ func main() {
 	setPoint(&points.x, &points.y)
 
 	printStr("x = ")
-	//printNumber(points.x)
+	// printNumber(points.x)
 	z01.PrintRune(rune(points.x)/10 + '0')
 	z01.PrintRune(rune(points.x)%10 + '0')
 	printStr(", y = ")
-	//printNumber(points.y)
+	// printNumber(points.y)
 	z01.PrintRune(rune(points.y)/10 + '0')
 	z01.PrintRune(rune(points.y)%10 + '0')
 	z01.PrintRune('\n')
