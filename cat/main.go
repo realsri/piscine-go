@@ -32,6 +32,7 @@ func main() {
 			Print("ERROR: open ")
 			Print(arg[i])
 			Print(": No such file or directory\n")
+			os.Exit(1)
 		}
 		// fmt.Println(string(content))
 		Print(string(content))
