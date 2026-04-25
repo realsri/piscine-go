@@ -21,8 +21,7 @@ func main() {
 	for i := 1; i < len; i++ {
 		if substrcheck(args[i], "01") || substrcheck(args[i], "galaxy") {
 			fmt.Println("Alert!!!")
-			//fmt.Println("\n")
+			// fmt.Println("\n")
 		}
 	}
-
 }
