@@ -21,7 +21,7 @@ func main() {
 	for i := 1; i < len; i++ {
 		if args[i] == "01" || args[i] == "galaxy" || args[i] == "galaxy 01" {
 			fmt.Println("Alert!!!")
-			//os.Exit(0)
+			// os.Exit(0)
 			return
 			// fmt.Println("\n")
 		}
