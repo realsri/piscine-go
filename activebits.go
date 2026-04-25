@@ -8,7 +8,13 @@ package piscine
 // )
 
 func ActiveBits(n int) int {
-	return 7 / 2
+	// return n / 2
+	count := 0
+	for n > 0 {
+		n = n & (n - 1)
+		count++
+	}
+	return count
 }
 
 // func main() {
