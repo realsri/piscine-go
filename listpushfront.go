@@ -1,14 +1,7 @@
 // package main
 package piscine
 
-/*
-import (
-
-		"fmt"
-	    "piscine"
-
-)
-*/
+// import "fmt"
 type NodeL struct {
 	Data interface{}
 	Next *NodeL
