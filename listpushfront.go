@@ -1,5 +1,6 @@
-// package main
 package piscine
+
+// package main
 
 // import "fmt"
 type NodeL struct {
