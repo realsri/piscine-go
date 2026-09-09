@@ -67,7 +67,8 @@ import (
 */
 func BTreeSearchItem(root *TreeNode, elem string) *TreeNode {
 	if root == nil {
-		return &TreeNode{Data: elem}
+		//return &TreeNode{Data: elem}
+		return nil
 	}
 
 	if elem == root.Data {
